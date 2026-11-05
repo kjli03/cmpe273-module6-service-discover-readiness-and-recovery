@@ -1,16 +1,3 @@
-# CMPE 273 — Service Discovery, Readiness, and Recovery
-
-This lab deploys an Inventory HTTP service with two replicas, a stable Kubernetes
-Service named `inventory`, and one in-cluster client. The client calls
-`http://inventory:8080/` (DNS/Service name), never a Pod IP. Responses include
-the serving Pod's hostname so load balancing and replacement are observable.
-
-
-## Prerequisites
-
-- A working Kubernetes cluster and `kubectl` configured for it.
-- Docker (or a compatible image builder).
-
 ## Instructions for deployment
 ### 1. Build and deploy
 
